@@ -9,17 +9,22 @@
 </head>
 <body>
     <div id="container">
-        <p id="container-text">Conversor de Temperatura</p>
-        <div id="menu">
-            <p id="menu-text">Selecione uma das opções: </p>
-            <select id="menu-drop">
-                <option class="menu-drop-option" value="celsius">Celsius</option>
-                <option class="menu-drop-option" value="fahrenheit">Fahrenheit</option>
-                <option class="menu-drop-option" value="kelvin">Kelvin</option>
-              </select>
+        <div id="container-titulo">
+            <p id="container-text">Conversor de Temperatura</p>
         </div>
-        <div id="resultado">
-            <p>Sua temperatura em celsius é:</p>
+        <div id="container-info">
+            <div id="input-user">
+                <label for="tempUser">Entre com sua temperatura:</label>
+                <input type="text" name="tempUser" id="tempUser">
+            </div>
+            <div id="menu">
+                <p id="menu-text">Selecione uma das opções: </p>
+                <select id="menu-drop">
+                    <option class="menu-drop-option" value="celsius">Celsius</option>
+                    <option class="menu-drop-option" value="fahrenheit">Fahrenheit</option>
+                    <option class="menu-drop-option" value="kelvin">Kelvin</option>
+                </select>
+            </div>
         </div>
     </div>
 
