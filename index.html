@@ -15,15 +15,53 @@
         <div id="container-info">
             <div id="input-user">
                 <label for="tempUser">Entre com sua temperatura:</label>
-                <input type="text" name="tempUser" id="tempUser">
+                <input type="text" name="tempUser" id="tempUser" required>
             </div>
             <div id="menu">
                 <p id="menu-text">Selecione uma das opções: </p>
-                <select id="menu-drop">
+                <select id="menu-drop" required>
                     <option class="menu-drop-option" value="celsius">Celsius</option>
                     <option class="menu-drop-option" value="fahrenheit">Fahrenheit</option>
                     <option class="menu-drop-option" value="kelvin">Kelvin</option>
+                    <option class="menu-drop-option" value="rankine">Rankine</option>
                 </select>
+            </div>
+            <div id="button">
+                <button id="btnConverter" onclick="converterTemperatura()" type="button">Calcular</button>
+            </div>
+        </div>
+        <div id="resultado">
+            <div class="resultadoDivs">
+                <div class="divsTempResultado">
+                    <p><span id="celsiusTemp">0º</span></p>
+                </div>
+                <div class="tempResultadoText">
+                    <p class="resultadoText">Cº</p>
+                </div>
+            </div>
+            <div class="resultadoDivs">
+                <div class="divsTempResultado">
+                    <p><span id="fahrenheitTemp">0º</span></p>
+                </div>
+                <div class="tempResultadoText">
+                    <p class="resultadoText">Fº</p>
+                </div>
+            </div>
+            <div class="resultadoDivs">
+                <div class="divsTempResultado">
+                    <p><span id="kelvinTemp">0º</span></p>
+                </div>
+                <div class="tempResultadoText">
+                    <p class="resultadoText">Kº</p>
+                </div>
+            </div>
+            <div class="resultadoDivs">
+                <div class="divsTempResultado">
+                    <p><span id="rankineTemp">0º</span></p>
+                </div>
+                <div class="tempResultadoText">
+                    <p class="resultadoText">Rº</p>
+                </div>
             </div>
         </div>
     </div>
