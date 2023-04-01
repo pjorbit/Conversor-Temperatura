@@ -81,9 +81,9 @@ function paraRankine(temp, unidade) {
 function converterTemperatura() {
   const tempInput = document.getElementById("tempUser");
   const temp = parseFloat(tempInput.value);
-  if(temp === '') {
+  if(tempInput.value.length == 0) {
     alert("Entre com um valor válido!");
-    return
+    return false
   }
 
   const unitSelect = document.getElementById("menu-drop");
